@@ -1,0 +1,283 @@
+0 verbose cli /usr/local/bin/node /usr/local/bin/npm
+1 info using npm@9.4.2
+2 info using node@v18.14.0
+3 timing npm:load:whichnode Completed in 8ms
+4 timing config:load:defaults Completed in 3ms
+5 timing config:load:file:/usr/local/lib/node_modules/npm/npmrc Completed in 5ms
+6 timing config:load:builtin Completed in 5ms
+7 timing config:load:cli Completed in 3ms
+8 timing config:load:env Completed in 0ms
+9 timing config:load:project Completed in 1ms
+10 timing config:load:file:/home/container/.npmrc Completed in 0ms
+11 timing config:load:user Completed in 0ms
+12 timing config:load:file:/usr/local/etc/npmrc Completed in 0ms
+13 timing config:load:global Completed in 0ms
+14 timing config:load:setEnvs Completed in 2ms
+15 timing config:load Completed in 16ms
+16 timing npm:load:configload Completed in 17ms
+17 timing npm:load:mkdirpcache Completed in 0ms
+18 timing npm:load:mkdirplogs Completed in 0ms
+19 verbose title npm install discord.js quick.db randomstring gpix canvas@2.11.0
+20 verbose argv "install" "discord.js" "quick.db" "randomstring" "gpix" "canvas@2.11.0"
+21 timing npm:load:setTitle Completed in 3ms
+22 timing config:load:flatten Completed in 5ms
+23 timing npm:load:display Completed in 6ms
+24 verbose logfile logs-max:10 dir:/home/container/.npm/_logs/2023-02-16T15_18_32_143Z-
+25 verbose logfile /home/container/.npm/_logs/2023-02-16T15_18_32_143Z-debug-0.log
+26 timing npm:load:logFile Completed in 8ms
+27 timing npm:load:timers Completed in 0ms
+28 timing npm:load:configScope Completed in 0ms
+29 timing npm:load Completed in 43ms
+30 timing arborist:ctor Completed in 1ms
+31 silly logfile done cleaning log files
+32 timing idealTree:init Completed in 392ms
+33 timing idealTree:userRequests Completed in 4ms
+34 silly idealTree buildDeps
+35 silly fetch manifest canvas@2.11.0
+36 timing arborist:ctor Completed in 0ms
+37 http fetch GET 200 https://registry.npmjs.org/canvas 454ms (cache revalidated)
+38 silly fetch manifest discord.js@^14.7.1
+39 http fetch GET 200 https://registry.npmjs.org/discord.js 67ms (cache revalidated)
+40 silly fetch manifest gpix@^1.1.8
+41 http fetch GET 200 https://registry.npmjs.org/gpix 355ms (cache revalidated)
+42 silly fetch manifest quick.db@^9.0.8
+43 http fetch GET 200 https://registry.npmjs.org/quick.db 63ms (cache revalidated)
+44 silly fetch manifest randomstring@^1.2.3
+45 http fetch GET 200 https://registry.npmjs.org/randomstring 72ms (cache revalidated)
+46 silly placeDep ROOT canvas@2.11.0 REPLACE for:  want: 2.11.0
+47 silly placeDep ROOT discord.js@14.7.1 REPLACE for:  want: ^14.7.1
+48 silly placeDep ROOT gpix@1.1.8 REPLACE for:  want: ^1.1.8
+49 silly placeDep ROOT quick.db@9.0.8 REPLACE for:  want: ^9.0.8
+50 silly placeDep ROOT randomstring@1.2.3 REPLACE for:  want: ^1.2.3
+51 timing idealTree:#root Completed in 1065ms
+52 timing idealTree:node_modules/canvas Completed in 0ms
+53 timing idealTree:node_modules/discord.js Completed in 0ms
+54 timing idealTree:node_modules/gpix Completed in 0ms
+55 timing idealTree:node_modules/quick.db Completed in 0ms
+56 timing idealTree:node_modules/randomstring Completed in 0ms
+57 timing idealTree:buildDeps Completed in 1068ms
+58 timing idealTree:fixDepFlags Completed in 4ms
+59 timing idealTree Completed in 1476ms
+60 timing reify:loadTrees Completed in 1479ms
+61 timing reify:diffTrees Completed in 9ms
+62 silly reify moves {}
+63 timing reify:retireShallow Completed in 2ms
+64 timing reify:createSparse Completed in 2ms
+65 timing reify:loadBundles Completed in 0ms
+66 silly audit bulk request {
+66 silly audit   '@discordjs/builders': [ '1.4.0' ],
+66 silly audit   '@discordjs/collection': [ '1.3.0' ],
+66 silly audit   '@discordjs/rest': [ '1.5.0' ],
+66 silly audit   '@discordjs/util': [ '0.1.0' ],
+66 silly audit   '@mapbox/node-pre-gyp': [ '1.0.10' ],
+66 silly audit   '@sapphire/async-queue': [ '1.5.0' ],
+66 silly audit   '@sapphire/shapeshift': [ '3.8.1' ],
+66 silly audit   '@sapphire/snowflake': [ '3.4.0' ],
+66 silly audit   '@tokenizer/token': [ '0.3.0' ],
+66 silly audit   '@types/node': [ '18.11.19' ],
+66 silly audit   '@types/ws': [ '8.5.4' ],
+66 silly audit   '@ungap/promise-all-settled': [ '1.1.2' ],
+66 silly audit   abbrev: [ '1.1.1' ],
+66 silly audit   'agent-base': [ '6.0.2' ],
+66 silly audit   'ansi-colors': [ '4.1.1' ],
+66 silly audit   'ansi-regex': [ '5.0.1' ],
+66 silly audit   'ansi-styles': [ '4.3.0' ],
+66 silly audit   anymatch: [ '3.1.3' ],
+66 silly audit   aproba: [ '2.0.0' ],
+66 silly audit   'are-we-there-yet': [ '2.0.0' ],
+66 silly audit   argparse: [ '2.0.1' ],
+66 silly audit   'array-uniq': [ '1.0.2' ],
+66 silly audit   'assertion-error': [ '1.1.0' ],
+66 silly audit   'balanced-match': [ '1.0.2' ],
+66 silly audit   'base64-js': [ '1.5.1' ],
+66 silly audit   'better-sqlite3': [ '8.1.0' ],
+66 silly audit   'binary-extensions': [ '2.2.0' ],
+66 silly audit   bindings: [ '1.5.0' ],
+66 silly audit   bl: [ '4.1.0' ],
+66 silly audit   'brace-expansion': [ '1.1.11' ],
+66 silly audit   braces: [ '3.0.2' ],
+66 silly audit   'browser-stdout': [ '1.3.1' ],
+66 silly audit   buffer: [ '5.7.1' ],
+66 silly audit   busboy: [ '1.6.0' ],
+66 silly audit   camelcase: [ '6.3.0', '5.3.1' ],
+66 silly audit   chai: [ '4.3.7' ],
+66 silly audit   chalk: [ '4.1.2' ],
+66 silly audit   'supports-color': [ '7.2.0', '8.1.1' ],
+66 silly audit   'check-error': [ '1.0.2' ],
+66 silly audit   chokidar: [ '3.5.3' ],
+66 silly audit   chownr: [ '2.0.0', '1.1.4' ],
+66 silly audit   cliui: [ '7.0.4', '6.0.0' ],
+66 silly audit   'color-convert': [ '2.0.1' ],
+66 silly audit   'color-name': [ '1.1.4' ],
+66 silly audit   'color-support': [ '1.1.3' ],
+66 silly audit   'concat-map': [ '0.0.1' ],
+66 silly audit   'console-control-strings': [ '1.1.0' ],
+66 silly audit   debug: [ '4.3.4', '4.3.3' ],
+66 silly audit   decamelize: [ '4.0.0', '1.2.0' ],
+66 silly audit   'decompress-response': [ '4.2.1', '6.0.0' ],
+66 silly audit   'deep-eql': [ '4.1.3' ],
+66 silly audit   'deep-extend': [ '0.6.0' ],
+66 silly audit   delegates: [ '1.0.0' ],
+66 silly audit   'detect-libc': [ '2.0.1' ],
+66 silly audit   diff: [ '5.0.0' ],
+66 silly audit   dijkstrajs: [ '1.0.2' ],
+66 silly audit   'discord-api-types': [ '0.37.31' ],
+66 silly audit   'djs-template-gen': [ '1.0.10' ],
+66 silly audit   'emoji-regex': [ '8.0.0' ],
+66 silly audit   'encode-utf8': [ '1.0.3' ],
+66 silly audit   'end-of-stream': [ '1.4.4' ],
+66 silly audit   escalade: [ '3.1.1' ],
+66 silly audit   'escape-string-regexp': [ '4.0.0' ],
+66 silly audit   'expand-template': [ '2.0.3' ],
+66 silly audit   'fast-deep-equal': [ '3.1.3' ],
+66 silly audit   'file-type': [ '18.2.0' ],
+66 silly audit   'file-uri-to-path': [ '1.0.0' ],
+66 silly audit   'fill-range': [ '7.0.1' ],
+66 silly audit   'find-up': [ '5.0.0', '4.1.0' ],
+66 silly audit   flat: [ '5.0.2' ],
+66 silly audit   'fs-constants': [ '1.0.0' ],
+66 silly audit   'fs-extra': [ '10.1.0' ],
+66 silly audit   'fs-minipass': [ '2.1.0' ],
+66 silly audit   minipass: [ '3.3.6', '4.0.2' ],
+66 silly audit   'fs.realpath': [ '1.0.0' ],
+66 silly audit   fsevents: [ '2.3.2' ],
+66 silly audit   gauge: [ '3.0.2' ],
+66 silly audit   'get-caller-file': [ '2.0.5' ],
+66 silly audit   'get-func-name': [ '2.0.0' ],
+66 silly audit   'github-from-package': [ '0.0.0' ],
+66 silly audit   glob: [ '7.2.3', '7.2.0' ],
+66 silly audit   'glob-parent': [ '5.1.2' ],
+66 silly audit   'graceful-fs': [ '4.2.10' ],
+66 silly audit   growl: [ '1.10.5' ],
+66 silly audit   'has-flag': [ '4.0.0' ],
+66 silly audit   'has-unicode': [ '2.0.1' ],
+66 silly audit   he: [ '1.2.0' ],
+66 silly audit   'https-proxy-agent': [ '5.0.1' ],
+66 silly audit   ieee754: [ '1.2.1' ],
+66 silly audit   inflight: [ '1.0.6' ],
+66 silly audit   inherits: [ '2.0.4' ],
+66 silly audit   ini: [ '1.3.8' ],
+66 silly audit   'is-binary-path': [ '2.1.0' ],
+66 silly audit   'is-extglob': [ '2.1.1' ],
+66 silly audit   'is-fullwidth-code-point': [ '3.0.0' ],
+66 silly audit   'is-glob': [ '4.0.3' ],
+66 silly audit   'is-number': [ '7.0.0' ],
+66 silly audit   'is-plain-obj': [ '2.1.0' ],
+66 silly audit   'is-unicode-supported': [ '0.1.0' ],
+66 silly audit   isexe: [ '2.0.0' ],
+66 silly audit   'js-yaml': [ '4.1.0' ],
+66 silly audit   jsonfile: [ '6.1.0' ],
+66 silly audit   'locate-path': [ '6.0.0', '5.0.0' ],
+66 silly audit   lodash: [ '4.17.21' ],
+66 silly audit   'lodash.snakecase': [ '4.1.1' ],
+66 silly audit   'log-symbols': [ '4.1.0' ],
+66 silly audit   loupe: [ '2.3.6' ],
+66 silly audit   'lru-cache': [ '6.0.0' ],
+66 silly audit   'make-dir': [ '3.1.0' ],
+66 silly audit   semver: [ '6.3.0', '7.3.8' ],
+66 silly audit   'mimic-response': [ '2.1.0', '3.1.0' ],
+66 silly audit   minimatch: [ '3.1.2', '4.2.1' ],
+66 silly audit   minimist: [ '1.2.7' ],
+66 silly audit   minizlib: [ '2.1.2' ],
+66 silly audit   mkdirp: [ '1.0.4' ],
+66 silly audit   'mkdirp-classic': [ '0.5.3' ],
+66 silly audit   mocha: [ '9.2.2' ],
+66 silly audit   ms: [ '2.1.2', '2.1.3' ],
+66 silly audit   'strip-json-comments': [ '3.1.1', '2.0.1' ],
+66 silly audit   nan: [ '2.17.0' ],
+66 silly audit   nanoid: [ '3.3.1' ],
+66 silly audit   'napi-build-utils': [ '1.0.2' ],
+66 silly audit   'node-abi': [ '3.32.0' ],
+66 silly audit   'node-fetch': [ '2.6.9' ],
+66 silly audit   nopt: [ '5.0.0' ],
+66 silly audit   'normalize-path': [ '3.0.0' ],
+66 silly audit   npmlog: [ '5.0.1' ],
+66 silly audit   'object-assign': [ '4.1.1' ],
+66 silly audit   once: [ '1.4.0' ],
+66 silly audit   'p-limit': [ '3.1.0', '2.3.0' ],
+66 silly audit   'p-locate': [ '5.0.0', '4.1.0' ],
+66 silly audit   'p-try': [ '2.2.0' ],
+66 silly audit   'path-exists': [ '4.0.0' ],
+66 silly audit   'path-is-absolute': [ '1.0.1' ],
+66 silly audit   pathval: [ '1.1.1' ],
+66 silly audit   'peek-readable': [ '5.0.0' ],
+66 silly audit   picomatch: [ '2.3.1' ],
+66 silly audit   pngjs: [ '5.0.0' ],
+66 silly audit   'prebuild-install': [ '7.1.1' ],
+66 silly audit   'simple-get': [ '4.0.1', '3.1.1' ],
+66 silly audit   pump: [ '3.0.0' ],
+66 silly audit   qrcode: [ '1.5.1' ],
+66 silly audit   'wrap-ansi': [ '6.2.0', '7.0.0' ],
+66 silly audit   y18n: [ '4.0.3', '5.0.8' ],
+66 silly audit   yargs: [ '15.4.1', '16.2.0' ],
+66 silly audit   'yargs-parser': [ '18.1.3', '20.2.4' ],
+66 silly audit   randombytes: [ '2.1.0', '2.0.3' ],
+66 silly audit   rc: [ '1.2.8' ],
+66 silly audit   'readable-stream': [ '3.6.0' ],
+66 silly audit   'readable-web-to-node-stream': [ '3.0.2' ],
+66 silly audit   readdirp: [ '3.6.0' ],
+66 silly audit   'require-directory': [ '2.1.1' ],
+66 silly audit   'require-main-filename': [ '2.0.0' ],
+66 silly audit   rimraf: [ '3.0.2' ],
+66 silly audit   'safe-buffer': [ '5.2.1' ],
+66 silly audit   'serialize-javascript': [ '6.0.0' ],
+66 silly audit   'set-blocking': [ '2.0.0' ],
+66 silly audit   'signal-exit': [ '3.0.7' ],
+66 silly audit   'simple-concat': [ '1.0.1' ],
+66 silly audit   streamsearch: [ '1.1.0' ],
+66 silly audit   string_decoder: [ '1.3.0' ],
+66 silly audit   'string-width': [ '4.2.3' ],
+66 silly audit   'strip-ansi': [ '6.0.1' ],
+66 silly audit   strtok3: [ '7.0.0' ],
+66 silly audit   tar: [ '6.1.13' ],
+66 silly audit   'tar-fs': [ '2.1.1' ],
+66 silly audit   'tar-stream': [ '2.2.0' ],
+66 silly audit   'to-regex-range': [ '5.0.1' ],
+66 silly audit   'token-types': [ '5.0.1' ],
+66 silly audit   tr46: [ '0.0.3' ],
+66 silly audit   'ts-mixer': [ '6.0.2' ],
+66 silly audit   tslib: [ '2.5.0' ],
+66 silly audit   'tunnel-agent': [ '0.6.0' ],
+66 silly audit   'type-detect': [ '4.0.8' ],
+66 silly audit   undici: [ '5.18.0' ],
+66 silly audit   universalify: [ '2.0.0' ],
+66 silly audit   'util-deprecate': [ '1.0.2' ],
+66 silly audit   'webidl-conversions': [ '3.0.1' ],
+66 silly audit   'whatwg-url': [ '5.0.0' ],
+66 silly audit   which: [ '2.0.2' ],
+66 silly audit   'which-module': [ '2.0.0' ],
+66 silly audit   'wide-align': [ '1.1.5' ],
+66 silly audit   workerpool: [ '6.2.0' ],
+66 silly audit   wrappy: [ '1.0.2' ],
+66 silly audit   ws: [ '8.12.0' ],
+66 silly audit   yallist: [ '4.0.0' ],
+66 silly audit   'yargs-unparser': [ '2.0.0' ],
+66 silly audit   'yocto-queue': [ '0.1.0' ],
+66 silly audit   canvas: [ '2.11.0' ],
+66 silly audit   'discord.js': [ '14.7.1' ],
+66 silly audit   gpix: [ '1.1.8' ],
+66 silly audit   'quick.db': [ '9.0.8' ],
+66 silly audit   randomstring: [ '1.2.3' ]
+66 silly audit }
+67 verbose reify failed optional dependency /home/container/node_modules/fsevents
+68 silly reify mark deleted [ '/home/container/node_modules/fsevents' ]
+69 timing reifyNode:node_modules/fsevents Completed in 6ms
+70 timing reify:unpack Completed in 6ms
+71 timing reify:unretire Completed in 0ms
+72 timing build:queue Completed in 4ms
+73 timing build:deps Completed in 4ms
+74 timing build Completed in 5ms
+75 timing reify:build Completed in 5ms
+76 timing reify:trash Completed in 0ms
+77 timing reify:save Completed in 119ms
+78 http fetch POST 200 https://registry.npmjs.org/-/npm/v1/security/advisories/bulk 4251ms
+79 timing auditReport:getReport Completed in 4259ms
+80 silly audit report {}
+81 timing auditReport:init Completed in 0ms
+82 timing reify:audit Completed in 4261ms
+83 timing reify Completed in 5760ms
+84 silly ADD
+85 timing command:install Completed in 5775ms
+86 verbose exit 0
+87 timing npm Completed in 5836ms
+88 info ok
